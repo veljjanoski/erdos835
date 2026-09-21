@@ -1,0 +1,6 @@
+S(5,6,12) invariant under pgl2(11), |G| = 1320
+  weight 6: 4 orbits, 924 sets, 0.2s
+  weight 5: 2 orbits, 792 sets, 0.0s
+  KM matrix (2, 4), columns forced to 0: 3, max entry 5
+  row 0 has no admissible column -> no solution
+  no invariant Steiner system

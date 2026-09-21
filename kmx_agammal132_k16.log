@@ -1,0 +1,4 @@
+S(15,16,32) invariant under agammal1(32), |G| = 4960  [exact cover]
+  weight 16: 121282 orbits, 601080390 sets, 41.1s
+  weight 15: 114065 orbits, 565722720 sets, 37.9s
+  saved npz, solve skipped

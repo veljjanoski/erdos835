@@ -1,0 +1,6 @@
+S(15,16,32) invariant under AGL(5,2)
+  |GL(5,2)| = 9999360, |AGL| = 319979520, 0.8s
+  weight 16: 38 orbits, 601080390 sets, 78.5s
+  weight 15: 30 orbits, 565722720 sets, 65.8s
+  KM matrix (30, 38), columns forced to 0 (some entry >= 2): 26, max entry 16
+  exact-cover solutions: 0

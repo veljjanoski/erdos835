@@ -1,0 +1,66 @@
+km_agl132_k16.npz: 570285 rows, 606330 columns, 304174 variables
+Running HiGHS 1.12.0 (git hash: 4f96ee8): Copyright (c) 2025 HiGHS under MIT licence terms
+LP has 570285 rows; 304174 cols; 9694365 nonzeros
+Coefficient ranges:
+  Matrix  [1e+00, 1e+00]
+  Cost    [0e+00, 0e+00]
+  Bound   [1e+00, 1e+00]
+  RHS     [1e+00, 1e+00]
+Presolving model
+570285 rows, 304174 cols, 9694365 nonzeros  12s
+Dependent equations search running on 570285 equations with time limit of 1000.00s
+Dependent equations search terminated after 53s due to expected time exceeding limit
+570285 rows, 304174 cols, 9694365 nonzeros  69s
+Presolve reductions: rows 570285(-0); columns 304174(-0); nonzeros 9694365(-0) - Not reduced
+Problem not reduced by presolve: solving the LP
+IPX model has 570285 rows, 304174 columns and 9694365 nonzeros
+Input
+    Number of variables:                                304174
+    Number of free variables:                           0
+    Number of constraints:                              570285
+    Number of equality constraints:                     570285
+    Number of matrix entries:                           9694365
+    Matrix range:                                       [1e+00, 1e+00]
+    RHS range:                                          [1e+00, 1e+00]
+    Objective range:                                    [0e+00, 0e+00]
+    Bounds range:                                       [1e+00, 1e+00]
+Preprocessing
+    Dualized model:                                     no
+    Number of dense columns:                            0
+    Range of scaling factors:                           [1.00e+00, 1.00e+00]
+    Scaled cost norm:                                   0
+    Scaled bounds norm:                                 1
+IPX version 1.0
+Interior point solve
+ Iter       primal obj         dual obj       pinf       dinf       gap     time
+   0    0.00000000e+00  -4.57310605e+05   8.93e-01   6.78e-02  2.00e+00       1s
+   1    0.00000000e+00  -2.10064387e+05   1.62e-01   6.78e-08  2.00e+00       2s
+   2    0.00000000e+00  -3.05899515e+04   7.62e-02   6.78e-14  2.00e+00       4s
+   3    0.00000000e+00  -1.15604092e+04   7.00e-03   3.66e-15  2.00e+00       6s
+   4    0.00000000e+00  -3.75620793e+02   6.16e-04   6.77e-16  1.99e+00      10s
+   5    0.00000000e+00  -6.10981543e+00   1.26e-04   2.23e-16  1.51e+00      16s
+   6    0.00000000e+00  -6.80313689e+00   3.23e-05   2.32e-16  1.55e+00      25s
+   7    0.00000000e+00  -3.80742797e-01   2.35e-06   2.24e-16  3.20e-01      32s
+   8    0.00000000e+00  -6.15899765e-02   8.82e-07   2.25e-16  5.97e-02      40s
+   9    0.00000000e+00  -4.47541920e-02   8.18e-08   2.32e-16  4.38e-02      46s
+  10    0.00000000e+00  -4.72830924e-03   3.51e-08   3.27e-16  4.72e-03      56s
+  11    0.00000000e+00  -9.10624063e-03   4.05e-09   4.27e-16  9.06e-03      67s
+  12    0.00000000e+00  -1.19116902e-06   5.00e-10   4.47e-16  1.19e-06      80s
+  13    0.00000000e+00  -3.24656381e-07   6.69e-11   4.44e-16  3.25e-07      91s
+  14    0.00000000e+00  -4.06104929e-06   1.61e-11   4.48e-16  4.06e-06     100s
+  15    0.00000000e+00  -1.55744906e-07   3.27e-12   4.51e-16  1.56e-07     116s
+  16    0.00000000e+00  -4.25469371e-08   7.17e-13   4.47e-16  4.25e-08     139s
+  17    0.00000000e+00  -1.34646997e-07   4.88e-14   4.71e-16  1.35e-07     162s
+  18*   0.00000000e+00  -1.57882356e-11   3.55e-15   4.53e-16  1.58e-11     185s
+ Constructing starting basis...
+    Start  factorization   1: nonzeros in basis =    570285                 185s
+ out of memory
+ERROR:   Ipx: Out of memory
+Model status        : Solve error
+HiGHS run time      :        419.21
+LP relaxation: (HiGHS Status 4: Solve error)  status 4  (420.7s)
+Traceback (most recent call last):
+  File "C:\Users\danie\Math\erdos835\km835lp_ipm.py", line 41, in <module>
+    x = res.x; print(f"  LP solution: {int((x > 1e-6).sum())} nonzero, {int((x > 1-1e-6).sum())} at 1, max fractional {x[(x>1e-6)&(x<1-1e-6)].max() if ((x>1e-6)&(x<1-1e-6)).any() else 0:.3f}")
+                                            ^^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'float'

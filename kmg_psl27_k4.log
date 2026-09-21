@@ -1,0 +1,6 @@
+S(3,4,8) invariant under psl2(7), |G| = 168
+  weight 4: 3 orbits, 70 sets, 0.3s
+  weight 3: 1 orbits, 56 sets, 0.0s
+  KM matrix (1, 3), columns forced to 0: 1, max entry 3
+  SAT: 4 clauses, SAT in 0.0s
+  SOLUTION: 1 orbits, total blocks 14 (expected 14), complement-closed True

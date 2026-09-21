@@ -1,0 +1,6 @@
+S(2,3,8) invariant under AGL(3,2)
+  |GL(3,2)| = 168, |AGL| = 1344, 0.2s
+  weight 3: 1 orbits, 56 sets, 0.0s
+  weight 2: 1 orbits, 28 sets, 0.0s
+  KM matrix (1, 1), columns forced to 0 (some entry >= 2): 1, max entry 6
+  exact-cover solutions: 0

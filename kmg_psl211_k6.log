@@ -1,0 +1,6 @@
+S(5,6,12) invariant under psl2(11), |G| = 660
+  weight 6: 6 orbits, 924 sets, 1.3s
+  weight 5: 2 orbits, 792 sets, 0.0s
+  KM matrix (2, 6), columns forced to 0: 1, max entry 5
+  SAT: 16 clauses, SAT in 0.0s
+  SOLUTION: 1 orbits, total blocks 132 (expected 132), complement-closed True

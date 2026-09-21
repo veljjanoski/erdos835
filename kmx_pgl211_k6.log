@@ -1,0 +1,6 @@
+S(5,6,12) invariant under pgl2(11), |G| = 1320  [exact cover]
+  weight 6: 4 orbits, 924 sets, 0.2s
+  weight 5: 2 orbits, 792 sets, 0.0s
+  columns hitting a row twice: 3
+  variables after complement merging: 1 (0 pairs)
+  row 0 has no candidate -> NO invariant Steiner system

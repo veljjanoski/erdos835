@@ -1,0 +1,10 @@
+S(15,16,32) invariant under pgl2(31), |G| = 29760
+  weight 16: 20636 orbits, 601080390 sets, 33.8s
+  weight 15: 19234 orbits, 565722720 sets, 29.1s
+  KM matrix (19234, 20636), columns forced to 0: 3350, max entry 15
+  row 0 has no admissible column -> no solution
+  no invariant Steiner system
+S(15,16,32) invariant under psl2(31), |G| = 14880
+  weight 16: 40843 orbits, 601080390 sets, 31.8s
+  weight 15: 38039 orbits, 565722720 sets, 30.6s
+  KM matrix (38039, 40843), columns forced to 0: 264, max entry 15

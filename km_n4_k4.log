@@ -1,0 +1,7 @@
+S(3,4,16) invariant under AGL(4,2)
+  |GL(4,2)| = 20160, |AGL| = 322560, 0.3s
+  weight 4: 2 orbits, 1820 sets, 0.1s
+  weight 3: 1 orbits, 560 sets, 0.0s
+  KM matrix (1, 2), columns forced to 0 (some entry >= 2): 1, max entry 12
+  exact-cover solutions: 1
+    orbits [0] sizes [140] total blocks 140 (expected 140) complement-closed True

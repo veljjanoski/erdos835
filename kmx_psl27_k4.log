@@ -1,0 +1,8 @@
+S(3,4,8) invariant under psl2(7), |G| = 168  [exact cover]
+  weight 4: 3 orbits, 70 sets, 0.2s
+  weight 3: 1 orbits, 56 sets, 0.0s
+  columns hitting a row twice: 1
+  variables after complement merging: 2 (0 pairs)
+  after propagation: 0 forced variables, 1 rows and 2 variables left
+  Algorithm X: 2 nodes, 0.0s
+  SOLUTION: 1 orbits, 14 blocks (expected 14), rows covered once: True

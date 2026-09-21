@@ -1,0 +1,4 @@
+S(15,16,32) invariant under agl1(32), |G| = 992  [exact cover]
+  weight 16: 606330 orbits, 601080390 sets, 65.1s
+  weight 15: 570285 orbits, 565722720 sets, 68.8s
+  saved npz, solve skipped

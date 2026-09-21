@@ -1,0 +1,41 @@
+km_psl231_k16.npz: 38039 rows, 40843 columns, 21213 variables
+Running HiGHS 1.12.0 (git hash: 4f96ee8): Copyright (c) 2025 HiGHS under MIT licence terms
+LP has 38039 rows; 21213 cols; 638747 nonzeros
+Coefficient ranges:
+  Matrix  [1e+00, 1e+00]
+  Cost    [0e+00, 0e+00]
+  Bound   [1e+00, 1e+00]
+  RHS     [1e+00, 1e+00]
+Presolving model
+38010 rows, 21189 cols, 638689 nonzeros  0s
+Dependent equations search running on 38009 equations with time limit of 1000.00s
+Dependent equations search terminated after 16.9s due to expected time exceeding limit
+38009 rows, 21188 cols, 638687 nonzeros  17s
+Presolve reductions: rows 38009(-30); columns 21188(-25); nonzeros 638687(-60) 
+Solving the presolved LP
+IPX model has 38009 rows, 21188 columns and 638687 nonzeros
+Input
+    Number of variables:                                21188
+    Number of free variables:                           0
+    Number of constraints:                              38009
+    Number of equality constraints:                     38009
+    Number of matrix entries:                           638687
+    Matrix range:                                       [1e+00, 1e+00]
+    RHS range:                                          [1e+00, 1e+00]
+    Objective range:                                    [0e+00, 0e+00]
+    Bounds range:                                       [1e+00, 1e+00]
+Preprocessing
+    Dualized model:                                     no
+    Number of dense columns:                            0
+    Range of scaling factors:                           [1.00e+00, 1.00e+00]
+    Scaled cost norm:                                   0
+    Scaled bounds norm:                                 1
+IPX version 1.0
+Interior point solve
+ Iter       primal obj         dual obj       pinf       dinf       gap     time
+   0    0.00000000e+00  -3.18690892e+04   1.03e+00   4.46e-01  2.00e+00       0s
+   1    0.00000000e+00  -1.60951626e+04   1.97e-01   4.46e-07  2.00e+00       0s
+   2    0.00000000e+00  -4.68553813e+03   6.62e-02   5.15e-08  2.00e+00       0s
+   3    0.00000000e+00  -1.39039846e+03   1.74e-02   5.12e-14  2.00e+00       0s
+   4    0.00000000e+00  -2.70342042e+02   2.67e-03   2.66e-15  1.99e+00       0s
+ Constructing starting basis...

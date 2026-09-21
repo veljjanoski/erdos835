@@ -1,0 +1,6 @@
+S(15,16,32) invariant under psl2(31), |G| = 14880  [exact cover]
+  weight 16: 40843 orbits, 601080390 sets, 39.8s
+  weight 15: 38039 orbits, 565722720 sets, 35.6s
+  columns hitting a row twice: 264
+  variables after complement merging: 21213 (19154 pairs)
+  after propagation: 0 forced variables, 38039 rows and 21213 variables left
