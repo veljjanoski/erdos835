@@ -47,6 +47,23 @@ Two side facts used or checked here:
   3779776, 1118208, 196560, 17920, 960; `intersect.py`), so this classical test gives no nonexistence proof. In the
   family S(t,t+1,2t+2) the divisibility conditions hold exactly when t+2 is prime, matching Ma–Tang.
 
+## No colouring with a large symmetry
+
+**Observation.** Let k ≥ 3 and let g be a permutation of {1, …, 2k} of prime order p with k + 1 < p ≤ 2k. Then no
+proper (k+1)-colouring of J(2k,k) is preserved by g (g maps every colour class onto a colour class).
+
+*Proof.* g permutes the k + 1 colour classes, with order dividing p > k + 1, so it fixes every class. Since p > k, g is
+a single p-cycle (x₁ x₂ … x_p) plus 2k − p fixed points. Let B consist of the fixed points and x₁, …, x_{p−k}; then
+|B| = k, and gB consists of the fixed points and x₂, …, x_{p−k+1}. So gB ≠ B and |B ∩ gB| = k − 1: B and gB are
+adjacent in J(2k,k) but have the same colour, a contradiction. □
+
+For k = 16 the primes are 19, 23, 29 and 31. Every 2-transitive group of degree 32 has order divisible by 32 · 31
+and therefore contains an element of order 31, so no 2-transitive group of degree 32 preserves a proper 17-colouring
+of J(32,16); this includes all five groups in the table above. It does not decide the three undecided rows of the
+table, which ask whether a single S(15,16,32) can be G-invariant. This observation was found on 27 Sep 2026 by an AI
+review agent (Claude Opus 5.5, Anthropic) that ran on this repository, and re-checked in a separate Claude session.
+No novelty is claimed.
+
 ## Validation
 
 The same code finds the known systems and rejects the known non-existent ones:
