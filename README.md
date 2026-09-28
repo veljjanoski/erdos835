@@ -3,7 +3,10 @@
 **Problem.** Is there a k > 2 such that the k-subsets of {1, …, 2k} can be coloured with k+1 colours so that
 every (k+1)-subset contains k-subsets of all k+1 colours? Equivalently: is the chromatic number of the Johnson
 graph J(2k,k) equal to k+1? (https://www.erdosproblems.com/835). Known: false for 3 ≤ k ≤ 8 by computation;
-false whenever k+1 is not prime (Ma–Tang); the smallest open case is k = 16.
+false whenever k+1 is not prime (Ma–Tang); false for k = 10 and k = 12, because a colour class would be an
+S(9,10,20) or an S(11,12,24) (see the reduction below), and deriving it five or seven times gives an S(4,5,15) or
+an S(4,5,17), neither of which exists (Mendelsohn–Hung, Utilitas Math. 1 (1972); Östergård–Pottonen, J. Combin.
+Theory Ser. A 115 (2008); remark by athvedt on the problem page). So the smallest open case is k = 16.
 
 **Reduction (already noted on the problem page).** In a (k+1)-colouring, the k+1 sets T ∪ {x} through a fixed
 (k−1)-set T form a clique, so each colour class contains exactly one k-set through every (k−1)-set: each colour
@@ -28,9 +31,12 @@ a fixed representative of the row orbit).
 | AΓL(1,32) | 4,960 | 121,282 / 114,065 | undecided: 60,714 variables, system saved (`km_agammal132_k16.npz`) |
 | AGL(1,32) | 992 | 606,330 / 570,285 | undecided: 304,174 variables, system regenerable in 3 minutes (`KM_NOSOLVE=1 python km835x.py agl1 32 16`) |
 
-For the three undecided groups the LP relaxation appears feasible (interior point drives the infeasibility to
-zero), so only an integer search can decide them. These results say nothing about S(15,16,32) without such
-symmetry, and nothing about the 17 disjoint copies that a colouring would need.
+The saved LP runs do not decide the three undecided groups. For AGL(1,32) the interior-point method on the LP
+relaxation reached primal infeasibility 3.55·10⁻¹⁵ before HiGHS ran out of memory and returned no solution
+(`lp_agl1_ipm.out`); this suggests that the relaxation is feasible, but no feasible point was saved or checked.
+The saved PSL(2,31) log ends after 4 interior-point iterations with no result (`lp_psl2_ipm.out`), and the
+AΓL(1,32) log holds only the problem size (`lp_agammal1.out`). The results above say nothing about
+S(15,16,32) without such symmetry, and nothing about the 17 disjoint copies that a colouring would need.
 
 Two side facts used or checked here:
 
